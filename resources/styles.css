@@ -81,6 +81,7 @@ nav li a {
 /* header */
 
 .banner {
+    animation: careerChange 8s linear;
     background-image: url(../resources/images/keyboardBG.jpg);
     background-size: cover;
     width: 100%;
@@ -90,29 +91,29 @@ nav li a {
     position: relative;
     padding: 10% 0;
     top: 3.5rem;
+    height: 40rem;
 }
 
-div .bannertext {
-    margin: 1rem;
+
+@keyframes careerChange {
+    0% {
+        background-image: url(../resources/images/diamondSetterBG.png);
+        opacity: 100%; 
+    }
+    45% {
+        background-image: url(../resources/images/diamondSetterBG.png);
+        opacity: 0%;
+    }
+    47% {
+        background-image: url(../resources/images/keyboardBG.jpg);
+        opacity: 2%;
+    }
+    100% {
+        background-image: url(../resources/images/keyboardBG.jpg);
+        opacity: 100%;
+    }
 }
 
-.bannertext {
-    background-color:rgb(24, 143, 217, .85);
-    height:fit-content;
-    width: 100%;
-    padding: 2rem, 3rem;
-}
-
-.bannertext h1 {
-    margin: 0 5rem 0 7rem;
-    padding-top: 6rem;
-}
-
-.bannertext p {
-    font-size: 2rem;
-    margin: 0 5rem 0 7rem;
-    padding-bottom: 6rem;
-}
 
 /* about */
 
@@ -125,6 +126,8 @@ div .bannertext {
     height: 16rem;
     width: 14rem;
 }
+
+
 
 /* skills */
 

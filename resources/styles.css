@@ -49,6 +49,18 @@ li {
     border: #465559 .75px solid;
 }
 
+a {
+    color: #188FD9;
+}
+
+a:visited {
+    color: #0D7BA6;
+}
+
+a:hover {
+    color: #465559;
+}
+
 /* navigation */
 
 nav {
@@ -72,13 +84,36 @@ nav ul {
 nav li {
     list-style-type: none;
     font-size: 1.5rem;
+    margin-right: 50px;
 }
 
 nav li a {
     text-decoration: none;
+    color: #F8F9Fd;
+    transition: all 800ms linear 200ms;
 }
 
-/* header */
+nav li a:visited {
+    color: #F8F9Fd;
+}
+
+nav li a:hover {
+    background-color: #F8F9Fd;
+    color: #188FD9;
+    border: #465559 1px solid;
+    border-radius: 6px;
+    padding: 5px 35px;
+}
+
+nav li a:active {
+    background-color: #465559;
+    color: #188FD9;
+    border: #F8F9Fd 1px solid;
+    border-radius: 6px;
+    padding: 5px 35px;
+}
+
+/* banner */
 
 .banner {
     animation: careerChange 8s linear;
@@ -117,26 +152,57 @@ nav li a {
 
 /* about */
 
-#about li {
-    list-style-type: none;
-    display:inline-flex;
+#about ul {
+    display: inline-flex;
+    align-content: space-between;
+}
+#about button {
+    display: block;
     margin: 1rem .2rem;
     padding: .5rem .5rem 0 .75rem;
-    outline:#465559 .5px solid;
     height: 16rem;
     width: 14rem;
+    text-align: center;
+}
+
+#flip li {
+    list-style-type: none;
+}
+
+#flip h3 {
+    line-height: 2rem;
+}
+
+#flip p {
+    display: none;
+}
+
+#flip button:active {
+    background-color:#0D7BA6;
+    color:#F8F9Fd;
 }
 
 
 
 /* skills */
 
+#skills ul {
+    display: inline-flex;
+    align-content: center;
+}
+
 #skills li {
     list-style-type: none;
-    display: inline-flex;
 }
 
 li img {
     height: 5rem;
     width: auto;
+}
+
+/* contact */
+
+#contact li {
+    list-style-type: none;
+    display:inline-block;
 }

@@ -462,12 +462,10 @@ nav {
         height: auto;
     }
     .checker h3 {
-        grid-area: 3 / 1 / 4 / 5;
-        align-self:normal;
+        grid-area: 2 / 1 / 3 / 5;
     }
     .checker p {
         grid-area: 3 / 1 / 4 / 5;
-        align-self: end;
     }
 }
 

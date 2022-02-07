@@ -1,71 +1,79 @@
-function showDetailOne() {
-    document.getElementById('one').firstChild.style.opacity = '0%';
-    document.getElementById('one').lastChild.style.opacity = '100%';
-}
-let slideElementOne = document.getElementById('one');
-slideElementOne.addEventListener('pointerdown', showDetailOne, false);
-function hideDetailOne() {
-    document.getElementById('one').firstChild.style.opacity = '100%';
-    document.getElementById('one').lastChild.style.opacity = '0%';
-}
-slideElementOne.addEventListener('pointerup', hideDetailOne, false);
 
-function showDetailTwo() {
-    document.getElementById('two').firstChild.style.opacity = '0%';
-    document.getElementById('two').lastChild.style.opacity = '100%';
-}
-let slideElementTwo = document.getElementById('two');
-slideElementTwo.addEventListener('pointerdown', showDetailTwo, false);
-function hideDetailTwo() {
-    document.getElementById('two').firstChild.style.opacity = '100%';
-    document.getElementById('two').lastChild.style.opacity = '0%';
-}
-slideElementTwo.addEventListener('pointerup', hideDetailTwo, false);
 
-function showDetailThree() {
-    document.getElementById('three').firstChild.style.opacity = '0%';
-    document.getElementById('three').lastChild.style.opacity = '100%';
+function showDetail(e) {
+    el = document.getElementById(e);
+    el.firstChild.style.opacity = '0%';
+    el.lastChild.style.opacity = '100%';
+    el.style.backgroundColor = '#0D7BA6';
+    el.style.color = '#F8F9Fd';
+    el.className = 'show';
 }
-let slideElementThree = document.getElementById('three');
-slideElementThree.addEventListener('pointerdown', showDetailThree, false);
-function hideDetailThree() {
-    document.getElementById('three').firstChild.style.opacity = '100%';
-    document.getElementById('three').lastChild.style.opacity = '0%';
-}
-slideElementThree.addEventListener('pointerup', hideDetailThree, false);
 
-function showDetailFour() {
-    document.getElementById('four').firstChild.style.opacity = '0%';
-    document.getElementById('four').lastChild.style.opacity = '100%';
-}
-let slideElementFour = document.getElementById('four');
-slideElementFour.addEventListener('pointerdown', showDetailFour, false);
-function hideDetailFour() {
-    document.getElementById('four').firstChild.style.opacity = '100%';
-    document.getElementById('four').lastChild.style.opacity = '0%';
-}
-slideElementFour.addEventListener('pointerup', hideDetailFour, false);
+function hideDetail(e) {
+    el = document.getElementById(e);
+    el.firstChild.style.opacity = '100%';
+    el.lastChild.style.opacity = '0%';
+    el.style.backgroundColor = 'rgba(24, 143, 217, .10)';
+    el.style.color = '#0D0402';
+    el.className = 'hidden';
 
-function showDetailFive() {
-    document.getElementById('five').firstChild.style.opacity = '0%';
-    document.getElementById('five').lastChild.style.opacity = '100%';
 }
-let slideElementFive = document.getElementById('five');
-slideElementFive.addEventListener('pointerdown', showDetailFive, false);
-function hideDetailFive() {
-    document.getElementById('five').firstChild.style.opacity = '100%';
-    document.getElementById('five').lastChild.style.opacity = '0%';
-}
-slideElementFive.addEventListener('pointerup', hideDetailFive, false);
+let hiddenElementOne = document.getElementById('one');
+hiddenElementOne.addEventListener('click', function(e){
+    e = document.getElementById('one');
+    if (e.classList.contains('hidden')) {
+        showDetail('one');
+    } else if (e.classList.contains('show')) {
+        hideDetail('one');
+    }
+})
 
-function showDetailSix() {
-    document.getElementById('six').firstChild.style.opacity = '0%';
-    document.getElementById('six').lastChild.style.opacity = '100%';
-}
-let slideElementSix = document.getElementById('six');
-slideElementSix.addEventListener('pointerdown', showDetailSix, false);
-function hideDetailSix() {
-    document.getElementById('six').firstChild.style.opacity = '100%';
-    document.getElementById('six').lastChild.style.opacity = '0%';
-}
-slideElementSix.addEventListener('pointerup', hideDetailSix, false);
+let hiddenElementTwo = document.getElementById('two');
+hiddenElementTwo.addEventListener('click', function(e){
+    e = document.getElementById('two');
+    if (e.classList.contains('hidden')) {
+        showDetail('two');
+    } else if (e.classList.contains('show')) {
+        hideDetail('two');
+    }
+})
+
+let hiddenElementThree = document.getElementById('three');
+hiddenElementThree.addEventListener('click', function(e){
+    e = document.getElementById('three');
+    if (e.classList.contains('hidden')) {
+        showDetail('three');
+    } else if (e.classList.contains('show')) {
+        hideDetail('three');
+    }
+})
+
+let hiddenElementFour = document.getElementById('four');
+hiddenElementFour.addEventListener('click', function(e){
+    e = document.getElementById('four');
+    if (e.classList.contains('hidden')) {
+        showDetail('four');
+    } else if (e.classList.contains('show')) {
+        hideDetail('four');
+    }
+})
+
+let hiddenElementFive = document.getElementById('five');
+hiddenElementFive.addEventListener('click', function(e){
+    e = document.getElementById('five');
+    if (e.classList.contains('hidden')) {
+        showDetail('five');
+    } else if (e.classList.contains('show')) {
+        hideDetail('five');
+    }
+})
+
+let hiddenElementSix = document.getElementById('six');
+hiddenElementSix.addEventListener('click', function(e){
+    e = document.getElementById('six');
+    if (e.classList.contains('hidden')) {
+        showDetail('six');
+    } else if (e.classList.contains('show')) {
+        hideDetail('six');
+    }
+})

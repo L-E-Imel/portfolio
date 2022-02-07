@@ -417,18 +417,19 @@ nav {
 
 @media only screen and (max-width: 1200px) {
     #projects li {
-        grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+        grid-template: repeat(2, 1fr) .75fr / repeat(4, 1fr);
     }
     .pc {
         grid-area: 1 / 1 / 5 / 5;
-        width: 90%;
+        width: 100%;
         height: auto;
+        margin: 0 auto;
     }
     .mobile {
         grid-area: 2 / 3 / 4 / 5;
         width: 35%;
         height: auto;
-        margin: 15% 0% 0% 50%;
+        margin: 10% 0 0 70%;
     }
     .worms h3,
     .club h3 {
@@ -441,8 +442,8 @@ nav {
     }
     .xl {
         grid-area: 1 / 1 / 3 / 5;
-        margin: 0 2rem 5rem 0;
-        width: 100%;
+        margin: 2rem auto 5rem auto;
+        width: 65%;
         height: auto;
     }
     .checker h3 {
@@ -466,7 +467,7 @@ nav {
     }
     .xl {
         grid-area: 1 / 1 / 3 / 5;
-        margin: 0 2rem 5rem 0;
+        margin: 0 2rem 7.5rem 0;
         width: 100%;
         height: auto;
     }

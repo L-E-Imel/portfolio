@@ -40,7 +40,7 @@ li {
     font-family: 'Poppins', sans-serif;
 }
 
-#about,
+#bio,
 #projects,
 #skills,
 .social,
@@ -69,7 +69,7 @@ a:hover {
     height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "about    about"
+        "bio    bio"
         "projects projects"
         "skills   social"
         "contact  contact";
@@ -84,7 +84,7 @@ a:hover {
         height: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-            "about    about    about    skills"
+            "bio    bio    bio    skills"
             "projects projects projects projects"
             "contact  contact  contact  social";
         gap: 1rem 1rem;
@@ -237,13 +237,13 @@ nav {
 }
 
 
-/* about */
+/* bio */
 
-#about {
-    grid-area: about;
+#bio {
+    grid-area: bio;
 }
 
-#about ul {
+#bio ul {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -253,18 +253,18 @@ nav {
 }
 
 @media only screen and (min-width: 1525px) {
-    #about ul {
+    #bio ul {
         justify-content: space-evenly;
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    #about ul {
+    #bio ul {
         justify-content: space-evenly;
     }
 }
 
-#about li {
+#bio li {
     display: grid;
     margin: 1rem .2rem;
     padding: .5rem .25rem 1rem .25rem;
@@ -279,32 +279,32 @@ nav {
 
 
 @media only screen and (max-width: 1100px) {
-    #about li {
+    #bio li {
         height: 13rem;
         width: 12rem;
         margin:.75rem .1rem;
         padding: 0 .25rem 0 .25rem;
     }
-    #about li h3 {
+    #bio li h3 {
         margin-top: 0;
         font-size: 1.5rem;
         line-height: .75rem;
     }
-    #about li img {
+    #bio li img {
         margin: 0;
     }
 }
 
-#about li h3 {
+#bio li h3 {
     line-height: 2.25rem;
     margin-top: .25rem;
 }
 
-#about li:hover {
+#bio li:hover {
     background-color: rgba(24, 143, 217, .35);
 }
 
-#about li:active {
+#bio li:active {
     background-color:#0D7BA6;
     color:#F8F9Fd;
 }
@@ -326,7 +326,7 @@ nav {
     line-height: 1.15rem;
 }
 
-#about li img {
+#bio li img {
     margin: 2px 0 0 0;
 }
 
@@ -383,20 +383,20 @@ nav {
 
 
 .xl {
-    grid-area: 1 / 1 / 5 / 3;
+    grid-area: 1 / 2 / 5 / 4;
     margin-left: 0%;
     width: 100%;
     height: auto;
 }
 
 .checker h3 {
-    grid-area: 1 / 3 / 2 / 5;
+    grid-area: 1 / 5 / 2 / 7;
     align-self: end;
     margin-left: 5%;
 }
 
 .checker p {
-    grid-area: 2 / 3 / 3 / 5;
+    grid-area: 2 / 5 / 3 / 7;
     margin-left: 5%;
 }
 
@@ -431,17 +431,17 @@ nav {
         grid-area: 5 / 2 / 6 / 4;
     }
     .xl {
-        grid-area: 1 / 1 / 5 / 3;
-        margin-left: 0%;
+        grid-area: 1 / 1 / 3 / 5;
+        margin: 0 2rem 5rem 0;
         width: 100%;
         height: auto;
     }
     .checker h3 {
-        grid-area: 1 / 3 / 2 / 4;
+        grid-area: 2 / 1 / 3 / 5;
         align-self: end;
     }
     .checker p {
-        grid-area: 2 / 3 / 3 / 4;
+        grid-area: 3 / 1 / 4 / 5;
     }
 }
 
@@ -456,12 +456,13 @@ nav {
         grid-area: 5 / 1 / 6 / 5;
     }
     .xl {
-        grid-area: 1 / 2 / 3 / 4;
-        margin-left: 0%;
+        grid-area: 1 / 1 / 3 / 5;
+        margin: 0 2rem 5rem 0;
         width: 100%;
         height: auto;
     }
     .checker h3 {
+        margin-top: 0;
         grid-area: 2 / 1 / 3 / 5;
     }
     .checker p {

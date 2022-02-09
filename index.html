@@ -87,8 +87,26 @@
 		</section>
 		<section id="contact">
 		<h2>Contact</h2>
-			<form>
-			</form>
+			<div class="container">
+				<form>
+					<label for="name">Your name:</label>
+						<input type="text" id="name" name="name" size="15" maxlength="30" required/>
+					<label for="email">Your email:</label>
+						<input type="email" id="email" size="30" maxlength="40" required />
+					<label for="findMe">How did you find me?</label>
+						<select name="findMe">
+							<option value="codecademy">Codecademy</option>
+							<option value="github">GitHub</option>
+							<option value="discord">Discord</option>
+							<option value="linkedin">LinkedIn</option>
+							<option value="other">Other</option>
+						</select>
+					<label for="reason">Reason for contacting?</label>
+						<textarea id="reason" name="reason" rows="7" cols="50" maxlength="200" spellcheck="true" required disabled placeholder="This form is currently not active. Please check back at a later date."></textarea>
+					<input type="submit" value="Send" disabled>
+				</form>
+				<img src="resources/images/selfOption1.jpg">
+			</div>
 		</section>
 		</div>
 	</main>
